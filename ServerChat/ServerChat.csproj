@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.AspNetCore.SignalR" Version="1.1.0" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="5.0.12" />
+      <PackageReference Include="runtime.native.System.Data.SqlClient.sni" Version="4.7.0" />
+      <PackageReference Include="runtime.win-arm64.runtime.native.System.Data.SqlClient.sni" Version="4.4.0" />
+      <PackageReference Include="runtime.win-x64.runtime.native.System.Data.SqlClient.sni" Version="4.4.0" />
+      <PackageReference Include="runtime.win-x86.runtime.native.System.Data.SqlClient.sni" Version="4.4.0" />
+      <PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="bin\Debug\net5.0\Users.db" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Include="bin\Debug\net5.0\Chat.db" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="bin\Debug\net5.0" />
+    </ItemGroup>
+
+</Project>
